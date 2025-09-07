@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Booking">
+
+    <fragment
+        android:id="@+id/nav_Booking"
+        android:name="com.example.electricox.CHARGINGSTATION.ui.Bookings"
+        android:label="Bookings"
+        tools:layout="@layout/fragment_booking" />
+
+    <fragment
+        android:id="@+id/nav_Add_bunk"
+        android:name="com.example.electricox.CHARGINGSTATION.ui.Add_Bunk"
+        android:label="Add Bunk"
+        tools:layout="@layout/fragment_add_bunk" />
+
+    <fragment
+        android:id="@+id/nav_viewBunk"
+        android:name="com.example.electricox.CHARGINGSTATION.ui.ViewBunk"
+        android:label="View Bunk"
+        tools:layout="@layout/fragment_view_bunk" />
+
+    <fragment
+        android:id="@+id/nav_feedBack"
+        android:name="com.example.electricox.CHARGINGSTATION.ui.feedBack"
+        android:label="FeedBack"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_payment"
+        android:name="com.example.electricox.CHARGINGSTATION.ui.Payment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+
+</navigation>

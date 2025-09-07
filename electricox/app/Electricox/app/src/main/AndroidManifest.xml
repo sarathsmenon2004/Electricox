@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logonround"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logonround"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Electricox"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".USER.Paymentt"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.payy"
+            android:exported="false" />
+        <activity
+            android:name=".USER.TrackMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".COMMON.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADAPTERS.PaymentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ADAPTERS.feedBackAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".USER.ViewQr"
+            android:exported="false" />
+        <activity
+            android:name=".USER.FeedBack"
+            android:exported="false" />
+        <activity
+            android:name=".USER.PaymentUser"
+            android:exported="false" />
+        <activity
+            android:name=".ADAPTERS.RequestAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CHARGINGSTATION.GenerateQRcode"
+            android:exported="false" />
+        <activity
+            android:name=".USER.EnterDetails"
+            android:exported="false" />
+        <activity
+            android:name=".USER.User_Nav"
+            android:exported="false"
+            android:label="@string/title_activity_user_nav"
+            android:theme="@style/Theme.Electricox.NoActionBar" />
+        <activity
+            android:name=".ADAPTERS.bunkAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".COMMON.Slot"
+            android:exported="false" />
+        <activity
+            android:name=".CHARGINGSTATION.Charging_Station"
+            android:exported="false"
+            android:label="@string/title_activity_charging_station"
+            android:theme="@style/Theme.Electricox.NoActionBar" />
+        <activity
+            android:name=".ADAPTERS.EvOwnersAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ADAPTERS.UserADapter"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.ViewUserFeedBack"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.ViewEVStation"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.ViewEVOwners"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.ViewUser"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".CharginStationRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Userregistration"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterMenu"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".USER.ui.Your_bookings"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC-rQLB12E77Z_wu-9uhnolyo6U_JgfOVI" />
+    </application>
+
+</manifest>

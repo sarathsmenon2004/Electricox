@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".USER.ui.Available_Bunks">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search"
+            app:boxStrokeColor="@color/myPrimary"
+            app:hintTextColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:endIconDrawable="@drawable/search"
+            app:endIconMode="custom"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <ListView
+        android:id="@+id/viewSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        ></ListView>
+
+
+
+
+</LinearLayout>
+
+
+

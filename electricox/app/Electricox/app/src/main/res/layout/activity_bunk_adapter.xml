@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/adminBackgroundColor"
+    tools:context=".ADAPTERS.bunkAdapter">
+
+    <!-- Card Container with Image and Details -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/cardBackground"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Image inside the Card -->
+            <ImageView
+                android:id="@+id/bunkImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logon"
+                android:contentDescription="Bunk Image"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Bunk Name -->
+            <TextView
+                android:id="@+id/BunkName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bunk Name"
+                android:textSize="24sp"
+                android:textColor="@color/adminTitleColor"
+                android:textStyle="bold"
+                android:paddingVertical="8dp" />
+
+            <!-- All details with dividers -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:paddingVertical="8dp">
+
+                <!-- Wifi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wifi Availability:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Restroom -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Restroom:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/restRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Waiting Area -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Waiting Area:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/waiting_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Nearby Amenities -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nearby Amenities:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/NearBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Onsite Support -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Onsite Support:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/Onsite_Support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Price per kW -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Price per kW:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/pricePerKw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹10.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+
+                <!-- Plug Types -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Plug Types:"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+
+                    <TextView
+                        android:id="@+id/plugTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type 1, Type 2, CCS"
+                        android:textSize="14sp"
+                        android:textColor="@color/adminTitleColor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Status -->
+
+
+
+            <!-- Bunk Address -->
+            <TextView
+
+                android:id="@+id/bunkAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/adminTitleColor"
+                android:paddingVertical="8dp" />
+
+
+            <RatingBar
+                android:id="@+id/truckRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.5" />
+
+
+
+            <TextView
+                android:id="@+id/bunkStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Open"
+                android:textSize="16sp"
+                android:textColor="@color/adminTitleColor"
+                android:textStyle="bold"
+                android:paddingVertical="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

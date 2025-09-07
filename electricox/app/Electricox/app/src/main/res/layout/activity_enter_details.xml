@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".USER.EnterDetails">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+
+
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logon"
+            android:contentDescription="Logo"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Booking Info Notice -->
+        <TextView
+            android:id="@+id/bookingInfoNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="ℹ️ Note:\n• You can cancel your booking only before making the payment.\n• Your request will be accepted approximately 30 minutes before your selected booking time.\n• There is a chance your booking may be cancelled by the bunk admin if your selected time is in high demand."
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:background="@drawable/bg_info_notice"
+            android:fontFamily="@font/quicksand_medium" />
+
+
+
+
+        <!-- Slot Info -->
+        <TextView
+            android:id="@+id/sloteNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slot Number: "
+            android:textSize="22sp"
+            android:textColor="@color/myPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_medium"
+             />
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="16dp"
+
+            android:elevation="12dp"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@android:color/white">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_vertical"
+                android:background="@android:color/white">
+
+
+                <!-- Booking Info Notice -->
+
+
+                <!-- Vehicle No -->
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vehicle Number"
+                    app:boxStrokeColor="@color/myPrimary"
+                    app:hintTextColor="@color/myPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/uploadDrivingLicence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Select Parking Time -->
+                <TextView
+                    android:id="@+id/parkingTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Start Time"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edittext_selector"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/quicksand_medium" />
+
+                <!-- Hidden Time -->
+                <TextView
+                    android:id="@+id/selectedTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <!-- Price per kW -->
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price per kW: ₹10"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/quicksand_medium" />
+
+                <!-- Duration Picker -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration (hrs):"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_marginEnd="8dp" />
+
+                    <Spinner
+                        android:id="@+id/durationSpinner"
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_bg"
+                        android:entries="@array/hour_options"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <!-- Total Cost -->
+                <TextView
+                    android:id="@+id/totalCostTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Total Cost: ₹0"
+                    android:textColor="@color/myPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Upload Button -->
+                <Button
+                    android:id="@+id/uploadButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Book Slot"
+                    android:backgroundTint="@color/myPrimary"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/quicksand_medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="myPrimary">#228B22</color>
+    <color name="myPrimaryTwo">#344B7A</color>
+    <color name="green">#8BC34A</color>
+    <color name="red">#F44336</color>
+    <color name="darkGray">#5A5454</color>
+    <color name="lightGray">#756969</color>
+    <color name="gray">#B1A2A2</color>
+
+    <color name="adminBackgroundColor">#F5F5F5</color> <!-- Light gray background -->
+
+    <!-- Text color for the title -->
+    <color name="adminTitleColor">#333333</color> <!-- Dark gray for readability -->
+
+    <!-- Background color for the card views -->
+    <color name="cardBackground">#FFFFFF</color> <!-- White cards with subtle shadow -->
+
+    <!-- Accent color for buttons or highlights -->
+    <color name="accentColor">#FF5722</color> <!-- Vibrant orange for action buttons -->
+
+    <!-- Text color for buttons -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text for buttons -->
+    <color name="dividerColor">#CCCCCC</color> <!-- White text for buttons -->
+</resources>

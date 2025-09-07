@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- Container for Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:gravity="center">
+
+        <!-- Feedback Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feedbackimage"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Subject Input Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userfeedback_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Subject"
+            app:boxStrokeColor="@color/myPrimary"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Description Input Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userfeedback_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Description.."
+            app:boxStrokeColor="@color/myPrimary"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/userfeedback_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="0"
+            android:layout_marginTop="20dp"
+            android:progressTint="@color/myPrimary"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/userfeedback_btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/myPrimary"
+            android:text="Send Feedback"
+            android:textColor="@android:color/white"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/quicksand_medium" />
+    </LinearLayout>
+</ScrollView>

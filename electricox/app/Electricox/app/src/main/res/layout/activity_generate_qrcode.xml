@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/gray"
+    >
+
+    <!-- QR Details Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header with QR Icon -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logon"
+                    android:contentDescription="QR Icon"
+                    android:scaleType="centerInside"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR Code Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myPrimary"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <!-- Underline -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Employee Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myPrimary" />
+                <TextView
+                    android:id="@+id/QRName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Slot Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Slot Number:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myPrimary" />
+                <TextView
+                    android:id="@+id/QRSlotNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A3"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Parking Time -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myPrimary" />
+                <TextView
+                    android:id="@+id/QrParkingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM - 2:00 PM"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!--            &lt;!&ndash; Booking ID &ndash;&gt;-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingVertical="6dp">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="Booking ID:"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="@color/myPrimary" />-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/QrBookingId"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="BKG-12456"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:textColor="@android:color/black" />-->
+            <!--            </LinearLayout>-->
+
+            <!-- Driving Licence -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vehicle Number:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myPrimary" />
+                <TextView
+                    android:id="@+id/QrDrivingLicence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DL-654321"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+
+
+
+            <!-- Generate QR Code Button -->
+            <Button
+                android:id="@+id/GenerateQrcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/myPrimary"
+                android:text="Generate QR Code"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"/>
+
+            <!-- QR Image View -->
+            <ImageView
+                android:id="@+id/Qrview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Send to User Button -->
+            <Button
+                android:id="@+id/sendToUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/myPrimary"
+                android:text="Send to User"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
